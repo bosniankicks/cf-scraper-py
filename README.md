@@ -8,16 +8,5 @@
 
 INSTRUCTIONS
 1. Run server.py
-2. Format your python request as shown below, please make sure to set the exec_path in get_cf and enable permissions if not running localhost.
+2. Format your python request like shown in the test folder, please make sure to set the exec_path in get_cf and enable permissions if not running localhost.
 
-import requests
-
-url = 'http://localhost:5001/get_cf_clearance'
-data = {'url': 'https://deliveroo.co.uk/login'}  # Replace with the target URL
-
-response = requests.post(url, json=data)
-
-if response.status_code == 200:
-    print(response.json())
-else:
-    print(f"Failed to get cf-clearance token: {response.text}")
