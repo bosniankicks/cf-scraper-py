@@ -1,4 +1,4 @@
-# cf-sc-raper-
+# cf-scraper-py
 
 
 1. A remake of https://github.com/zfcsoftware/cf-clearance-scraper/tree/main for a python based solution
