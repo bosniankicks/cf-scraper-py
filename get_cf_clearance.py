@@ -17,7 +17,7 @@ def get_cf_clearance_cookie(url):
 
             used_user_agent = page.evaluate("navigator.userAgent")
             page.goto(url)
-            time.sleep(5)
+            time.sleep(4)
 
             cookies = context.cookies()
             cf_clearance = next((cookie['value'] for cookie in cookies if cookie['name'] == 'cf_clearance'), None)
